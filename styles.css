@@ -173,9 +173,62 @@ main {
   color: var(--ink);
 }
 
+.card__subtitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--teal);
+  margin-bottom: 0.6rem;
+}
+
+.card__author {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink);
+  opacity: 0.65;
+  margin-bottom: 1.4rem;
+}
+
+.card__heading {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+}
+
 .card__text {
   margin-bottom: 1rem;
   max-width: 40rem;
+}
+
+.card__table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.card__table th,
+.card__table td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.card__table th {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold);
+}
+
+.card__list--refs li {
+  font-size: 0.92rem;
+  margin-bottom: 0.6rem;
 }
 
 .card__list {
