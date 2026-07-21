@@ -304,6 +304,80 @@ main {
   }
 }
 
+/* ===== Acordeón de recursos ===== */
+.accordion {
+  margin: 1rem 0 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.accordion__item {
+  border-bottom: 1px solid var(--line);
+}
+
+.accordion__summary {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem 0.4rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-body);
+}
+
+.accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion__summary::before {
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--gold);
+  width: 1rem;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.accordion__item[open] > .accordion__summary::before {
+  content: "–";
+}
+
+.accordion__num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink);
+  opacity: 0.5;
+  width: 1.4rem;
+  flex-shrink: 0;
+}
+
+.accordion__name {
+  flex: 1;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.accordion__rating {
+  font-size: 0.85rem;
+  color: var(--gold);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.accordion__content {
+  padding: 0 0.4rem 1.1rem 2.3rem;
+  font-size: 0.93rem;
+}
+
+.accordion__content p {
+  margin-bottom: 0.5rem;
+  max-width: 38rem;
+}
+
+.accordion__summary:hover .accordion__name {
+  color: var(--teal);
+}
+
 .card__list {
   padding-left: 1.3rem;
 }
