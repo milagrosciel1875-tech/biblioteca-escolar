@@ -378,6 +378,72 @@ main {
   color: var(--teal);
 }
 
+.btn-resource {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  background-color: var(--ink);
+  color: var(--paper);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.btn-resource:hover {
+  background-color: var(--teal);
+}
+
+/* ===== Acordeón de categorías (nivel superior) ===== */
+.accordion-group {
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-group__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.3rem;
+  cursor: pointer;
+  list-style: none;
+  background-color: var(--paper);
+}
+
+.accordion-group__summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-group__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.accordion-group__count {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.accordion-group[open] > .accordion-group__summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.accordion-group__body {
+  padding: 1.2rem 1.3rem 0.4rem;
+}
+
+.accordion-group__body .accordion {
+  border-top: none;
+}
+
 .card__list {
   padding-left: 1.3rem;
 }
